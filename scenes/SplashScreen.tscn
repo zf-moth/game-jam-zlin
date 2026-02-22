@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cww3xuk6o1f53"]
+
+[ext_resource type="Script" uid="uid://kpumjbh7b8mx" path="res://scripts/splash_screen.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://bc1c5n7q3qftg" path="res://assets/godot_logo.png" id="2_godot"]
+[ext_resource type="Texture2D" uid="uid://dirrv0b1f13dy" path="res://assets/teamlogo.png" id="3_team"]
+
+[node name="SplashScreen" type="Control" unique_id=1013120420]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="." unique_id=717053085]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05, 0.05, 0.2, 1)
+
+[node name="GodotLogo" type="TextureRect" parent="." unique_id=586973687]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_godot")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TeamLogo" type="TextureRect" parent="." unique_id=1381222107]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -420.0
+offset_top = -400.0
+offset_right = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+texture = ExtResource("3_team")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BlackOverlay" type="ColorRect" parent="." unique_id=721401136]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)

@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://kv5105a1kksk"]
+
+[ext_resource type="Script" uid="uid://bl5i32iw88xrp" path="res://scripts/death_scene.gd" id="1_hyhnv"]
+[ext_resource type="Texture2D" uid="uid://px3t5tia6s1t" path="res://assets/tile_ground.png" id="1_o2qfb"]
+[ext_resource type="Texture2D" uid="uid://b6mc8m80v8c32" path="res://assets/death/PNG_0001.png" id="2_ea6vl"]
+[ext_resource type="Texture2D" uid="uid://f4nvi4v63kxm" path="res://assets/death/PNG_0002.png" id="3_hyhnv"]
+[ext_resource type="Texture2D" uid="uid://cnv5stqo50ovv" path="res://assets/death/PNG_0003.png" id="4_8rkqi"]
+[ext_resource type="Texture2D" uid="uid://b7e60kvs0rhj5" path="res://assets/death/PNG_0004.png" id="5_1wp7d"]
+[ext_resource type="Texture2D" uid="uid://d18s6afmpxmm7" path="res://assets/death/PNG_0005.png" id="6_ek0b4"]
+[ext_resource type="Texture2D" uid="uid://dtvblavgwed8l" path="res://assets/death/PNG_0006.png" id="7_bi0bf"]
+[ext_resource type="Texture2D" uid="uid://y1ds5nn3kv37" path="res://assets/death/PNG_0007.png" id="8_1njwc"]
+[ext_resource type="Texture2D" uid="uid://cor1x1rloehao" path="res://assets/death/PNG_0008.png" id="9_mqqog"]
+[ext_resource type="Texture2D" uid="uid://qxvryx50j1hi" path="res://assets/death/PNG_0009.png" id="10_liak3"]
+[ext_resource type="Texture2D" uid="uid://cdc12dm6drsbe" path="res://assets/death/PNG_0010.png" id="11_jf4q8"]
+[ext_resource type="Texture2D" uid="uid://du3nohtn0jirv" path="res://assets/death/PNG_0011.png" id="12_0ccng"]
+[ext_resource type="Texture2D" uid="uid://dv6vrobcgs42f" path="res://assets/death/PNG_0012.png" id="13_q3n1d"]
+[ext_resource type="Texture2D" uid="uid://dpwnlgy3khwd8" path="res://assets/death/PNG_0013.png" id="14_ila6c"]
+[ext_resource type="Texture2D" uid="uid://dsbwt6dxywr6q" path="res://assets/death/PNG_0014.png" id="15_nsce8"]
+[ext_resource type="AudioStream" uid="uid://bn5bpdtggono0" path="res://assets/sound effects/shattering_lightbulb.ogg" id="16_shtsnd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1haql"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ea6vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hyhnv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8rkqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1wp7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ek0b4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bi0bf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1njwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mqqog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_liak3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jf4q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0ccng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q3n1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ila6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nsce8")
+}],
+"loop": false,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_dkhfj"]
+offsets = PackedFloat32Array(0.44, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mr0a8"]
+gradient = SubResource("Gradient_dkhfj")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="DeathScene" type="Node2D" unique_id=1527149109]
+script = ExtResource("1_hyhnv")
+
+[node name="Ground" type="Node2D" parent="." unique_id=1045470864]
+position = Vector2(143, -30)
+
+[node name="TileGround7" type="Sprite2D" parent="Ground" unique_id=908350861]
+position = Vector2(469.5, 149)
+texture = ExtResource("1_o2qfb")
+
+[node name="TileGround8" type="Sprite2D" parent="Ground" unique_id=1777966146]
+position = Vector2(909.5, 399)
+texture = ExtResource("1_o2qfb")
+
+[node name="TileGround9" type="Sprite2D" parent="Ground" unique_id=1661737817]
+position = Vector2(1348, 650)
+texture = ExtResource("1_o2qfb")
+
+[node name="TileGround3" type="Sprite2D" parent="Ground" unique_id=718033967]
+position = Vector2(33, 402)
+texture = ExtResource("1_o2qfb")
+
+[node name="TileGround" type="Sprite2D" parent="Ground" unique_id=148327111]
+position = Vector2(473, 652)
+texture = ExtResource("1_o2qfb")
+
+[node name="TileGround2" type="Sprite2D" parent="Ground" unique_id=1035179169]
+position = Vector2(915, 903)
+texture = ExtResource("1_o2qfb")
+
+[node name="TileGround4" type="Sprite2D" parent="Ground" unique_id=257156680]
+position = Vector2(-401, 651)
+texture = ExtResource("1_o2qfb")
+
+[node name="TileGround5" type="Sprite2D" parent="Ground" unique_id=1869975977]
+position = Vector2(39, 901)
+texture = ExtResource("1_o2qfb")
+
+[node name="TileGround6" type="Sprite2D" parent="Ground" unique_id=669471099]
+position = Vector2(475, 1151)
+texture = ExtResource("1_o2qfb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1041244755]
+position = Vector2(632, 194)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_1haql")
+autoplay = "default"
+frame = 13
+frame_progress = 1.0
+
+[node name="ShatterSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_shtsnd")
+
+[node name="Gradient" type="Sprite2D" parent="." unique_id=56211597]
+position = Vector2(639.99994, 360.25)
+scale = Vector2(19.999998, 11.2578125)
+texture = SubResource("GradientTexture2D_mr0a8")

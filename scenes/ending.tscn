@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b2qiaubckyldh"]
+
+[ext_resource type="Texture2D" uid="uid://ch4duh3mfexf2" path="res://assets/finale.png" id="1_mqjok"]
+[ext_resource type="AudioStream" uid="uid://0whmm456s3s2" path="res://assets/sound effects/happy_ending_blud.ogg" id="2_fyrdv"]
+
+[node name="Ending" type="Node2D" unique_id=1640615280]
+
+[node name="Finale" type="Sprite2D" parent="." unique_id=1830527484]
+position = Vector2(640, 360)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("1_mqjok")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1643922350]
+stream = ExtResource("2_fyrdv")
+autoplay = true

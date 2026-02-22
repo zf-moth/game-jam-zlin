@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://0whmm456s3s2"
+path="res://.godot/imported/happy_ending_blud.ogg-bc77dcfbc65c9c21a281050bf1d8e8fb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound effects/happy_ending_blud.ogg"
+dest_files=["res://.godot/imported/happy_ending_blud.ogg-bc77dcfbc65c9c21a281050bf1d8e8fb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

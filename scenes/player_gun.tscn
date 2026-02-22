@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://ctcss8iw8igbi"]
+
+[ext_resource type="Script" uid="uid://c51tyaalgqr8d" path="res://scenes/player_gun.gd" id="1_wjk2r"]
+[ext_resource type="Texture2D" uid="uid://c7fqvcfbftrkj" path="res://assets/gun.png" id="2_gf8w7"]
+[ext_resource type="Texture2D" uid="uid://cl65xfvqh6do6" path="res://assets/gun_sparky.png" id="3_gf8w7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1o67"]
+atlas = ExtResource("3_gf8w7")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2a3gn"]
+atlas = ExtResource("3_gf8w7")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w8gfx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g1o67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2a3gn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="Player_Gun" type="Node2D" unique_id=236789692]
+script = ExtResource("1_wjk2r")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=186659929]
+texture = ExtResource("2_gf8w7")
+
+[node name="BulletSpawner" type="Node2D" parent="." unique_id=782777392]
+position = Vector2(186, -13)
+
+[node name="Sparky" type="AnimatedSprite2D" parent="." unique_id=1634315130]
+position = Vector2(0, 30)
+sprite_frames = SubResource("SpriteFrames_w8gfx")
+autoplay = "default"
+frame_progress = 0.47328117

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu2f3wqr13hph"]
+
+[ext_resource type="Script" uid="uid://b0emp638i75xe" path="res://scripts/solar_panel_pickup.gd" id="1_u1477"]
+[ext_resource type="Texture2D" uid="uid://e5wfre7rp8om" path="res://assets/Solar_panel.png" id="1_wkv6b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sp1"]
+radius = 15.0
+
+[node name="SolarPanel" type="Node2D" unique_id=177702161]
+script = ExtResource("1_u1477")
+
+[node name="SolarPanel" type="Sprite2D" parent="." unique_id=1723216566]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_wkv6b")
+
+[node name="PickupArea" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 0
+
+[node name="PickupShape" type="CollisionShape2D" parent="PickupArea"]
+shape = SubResource("CircleShape2D_sp1")

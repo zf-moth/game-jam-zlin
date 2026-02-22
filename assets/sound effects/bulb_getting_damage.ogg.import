@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b4q6jje1rgcfc"
+path="res://.godot/imported/bulb_getting_damage.ogg-a70075e308c5133715dc7c50d0678c09.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound effects/bulb_getting_damage.ogg"
+dest_files=["res://.godot/imported/bulb_getting_damage.ogg-a70075e308c5133715dc7c50d0678c09.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

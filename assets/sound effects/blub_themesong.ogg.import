@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2da0t3jcr240"
+path="res://.godot/imported/blub_themesong.ogg-26c46ad3e00fb06bb1cedfd01e5f3b02.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound effects/blub_themesong.ogg"
+dest_files=["res://.godot/imported/blub_themesong.ogg-26c46ad3e00fb06bb1cedfd01e5f3b02.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

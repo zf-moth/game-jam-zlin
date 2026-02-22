@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://cxcyr4whdrc7a"]
+
+[ext_resource type="Script" uid="uid://c4vf1dn8dyirf" path="res://scripts/pause_menu.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://cnkbxwsbee61s" path="res://assets/pause menu/pause menu.png" id="2_bg"]
+[ext_resource type="Texture2D" uid="uid://cv6e5lf7o45uh" path="res://assets/pause menu/buttons/resume_normal.png" id="3_resume_n"]
+[ext_resource type="Texture2D" uid="uid://c8ac31attjbwo" path="res://assets/pause menu/buttons/resume_hover.png" id="4_resume_h"]
+[ext_resource type="Texture2D" uid="uid://8jducaw31ww3" path="res://assets/pause menu/buttons/resume_press.png" id="5_resume_p"]
+[ext_resource type="Texture2D" uid="uid://d52g45uplw8g" path="res://assets/pause menu/buttons/quit_normal.png" id="6_quit_n"]
+[ext_resource type="Texture2D" uid="uid://cd110jc8jnhew" path="res://assets/pause menu/buttons/quit_hover.png" id="7_quit_h"]
+[ext_resource type="Texture2D" uid="uid://dfh632ck2f3yj" path="res://assets/pause menu/buttons/quit_press.png" id="8_quit_p"]
+[ext_resource type="Shader" uid="uid://dr40y5y7lwxrt" path="res://shaders/pause_blur.gdshader" id="9_blur"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_blur"]
+shader = ExtResource("9_blur")
+shader_parameter/blur_amount = 3.0
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1783898810]
+layer = 110
+script = ExtResource("1_script")
+
+[node name="Panel" type="Control" parent="." unique_id=1734756608]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlurRect" type="ColorRect" parent="Panel" unique_id=802444454]
+material = SubResource("ShaderMaterial_blur")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="Panel" unique_id=1505860911]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 3200.0
+offset_bottom = 1800.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.33343887, 0.33343887)
+texture = ExtResource("2_bg")
+stretch_mode = 5
+
+[node name="ButtonContainer" type="VBoxContainer" parent="Panel" unique_id=1954580700]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 30.0
+offset_right = 100.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="ResumeButton" type="TextureButton" parent="Panel" unique_id=1152400577]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -239.0
+offset_top = -74.0
+offset_right = 817.0
+offset_bottom = 448.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4263842, 0.4263842)
+texture_normal = ExtResource("3_resume_n")
+texture_pressed = ExtResource("5_resume_p")
+texture_hover = ExtResource("4_resume_h")
+stretch_mode = 5
+
+[node name="QuitButton" type="TextureButton" parent="Panel" unique_id=782590666]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -95.0
+offset_top = -242.99997
+offset_right = 961.0
+offset_bottom = 279.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.36424658, 0.36424658)
+texture_normal = ExtResource("6_quit_n")
+texture_pressed = ExtResource("8_quit_p")
+texture_hover = ExtResource("7_quit_h")
+stretch_mode = 5
